@@ -368,12 +368,12 @@ nav li.active {
 nav a {
   display: block;
   padding: 0.75rem;
-  color: #af4a43;
+  color: #333;
   text-align: center;
   text-decoration: none;
 }
 nav a:hover {
-  color: #333;
+  color: #af4a43;
 }
 
 #footerWrapper {

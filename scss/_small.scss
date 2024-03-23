@@ -52,10 +52,10 @@ nav {
     a {
         display: block;
         padding: 0.75rem;
-        color: $secondaryColor;
+        color: $fontColor;
         text-align: center;
         text-decoration: none;
-        &:hover {color: $fontColor}
+        &:hover {color: $secondaryColor}
     }
 }
 
