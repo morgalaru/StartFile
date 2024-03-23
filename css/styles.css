@@ -311,3 +311,92 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+#headerWrapper {
+  background-color: #c5ded0;
+  color: #af4a43;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 16px;
+  gap: 10px;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#navWrapper {
+  background-color: #d6e6df;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul li {
+  flex: 1;
+}
+nav li.active {
+  background-color: #b9d1c6;
+}
+nav a {
+  display: block;
+  padding: 0.75rem;
+  color: #af4a43;
+  text-align: center;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #333;
+}
+
+#footerWrapper {
+  background-color: #e7f0ec;
+  padding: 0.8rem 16px;
+}
+#footerWrapper p {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media only screen and (min-width: 35rem) {
+  header {
+    padding: 1.8rem 16px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 60rem) {
+  header, nav, main, footer {
+    max-width: 60rem;
+    margin: auto;
+  }
+}
